@@ -1,29 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <title>ip-two</title>
-
+    <link href="css/styles.css" rel="stylesheet" type="text/css">   
   </head>
   <body>
-    <div class = "container">
-      <form id = "form">
-        <p></p><input type = "number" name ="day" placeholder="day" min="1" max="31" /></p>
-        <p></p><input type = "number" name = "month" placeholder = "month " min = "1" max="12"/></p>
-        <p></p><input type = "number" name="year" placeholder="year" min="1000" max="9999"/></p>
-        <label>
-          <input type="radio" name="gender" value="M"/>
-          Male
-        </label>
-        <label>
-          <input type="radio" name="gender" value="F"/>
-          Female
-        </label>
-        <p></p><input type="submit"/></p>
-      </form>
-
-      <script>type= "text/javascript" src= js/myscript.js </script>
-
-    </div>
-
+    <h1>The Akan Calendar</h1>
+    <p>Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born.<p></p>
+    <h2>Find out your Akan name here.</h2>
+    <form id = "form">
+      <input type="number" name="day" id ="day" placeholder="day" min="1" max="31"/>
+      <input type="number" name="month" id ="month" placeholder="month"/>
+      <input type="number" name="year" id ="year" placeholder="year"/>
+      <label>
+        <input type="radio" name = "gender" value = "M"/>
+        Male
+      </label>
+      <label>
+        <input type="radio" name = "gender" value = "F"/>
+        Female
+      </label>
+      <input type="submit" />
+    </form>
+    <script type = "text/javascript" src = "js/myscript.js"></script>
   </body>
 </html>

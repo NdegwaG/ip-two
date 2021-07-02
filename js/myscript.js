@@ -15,4 +15,5 @@ function formSubmitted(e){
   const year = document.getElementById("year").value;
 }
 
-const gender =document.querySelector('input[name="gender"]:checked').value
+const gender =document.querySelector('input[name="gender"]:checked').value;
+const dayOfWeek = calculateDayOfWeek(day,month,year)

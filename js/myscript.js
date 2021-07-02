@@ -14,3 +14,5 @@ function formSubmitted(e){
   const month = document.getElementById("month").value;
   const year = document.getElementById("year").value;
 }
+
+const gender =document.querySelector('input[name="gender"]:checked').value

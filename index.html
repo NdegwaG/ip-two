@@ -2,26 +2,32 @@
 <html>
   <head>
     <title>ip-two</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet" type="text/css">   
   </head>
+  
   <body>
-    <h1>The Akan Calendar</h1>
-    <p>Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born.<p></p>
-    <h2>Find out your Akan name here.</h2>
-    <form id = "form">
-      <input type="number" name="day" id ="day" placeholder="day" min="1" max="31"/>
-      <input type="number" name="month" id ="month" placeholder="month"/>
-      <input type="number" name="year" id ="year" placeholder="year"/>
-      <label>
-        <input type="radio" name = "gender" value = "M"/>
-        Male
-      </label>
-      <label>
-        <input type="radio" name = "gender" value = "F"/>
-        Female
-      </label>
-      <input type="submit" />
-    </form>
+    <div class="container">
+      <h1>The Akan Calendar</h1>
+      <p>Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born.<p></p>
+      <h2>Find out your Akan name here.</h2>
+      <div class = "calculate">
+        <form id = "form">
+          <input type="number" name="day" id ="day" placeholder="day" min="1" max="31"/>
+          <input type="number" name="month" id ="month" placeholder="month" min="1" max="12"/>
+          <input type="number" name="year" id ="year" placeholder="year" min="1900" max="9999"/>
+          <label>
+            <input type="radio" name = "gender" value = "M"/>
+            Male
+          </label>
+          <label>
+            <input type="radio" name = "gender" value = "F"/>
+            Female
+          </label>
+          <input type="submit" />
+        </form>
+      </div>
+    </div>
     <script type = "text/javascript" src = "js/myscript.js"></script>
   </body>
 </html>

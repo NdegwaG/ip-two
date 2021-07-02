@@ -10,4 +10,7 @@ function calculateDayofWeek (day,month,year){
 
 function formSubmitted(e){
   e.preventDefault()
+  const day = document.getElementById("day").value;
+  const month = document.getElementById("month").value;
+  const year = document.getElementById("year").value;
 }

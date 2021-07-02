@@ -7,3 +7,7 @@ function calculateDayofWeek (day,month,year){
   const YY = year.slice(2,4);
   return Math.round ((((CC/4) -2*CC-1) + ((5*YY/4)) + ((26*(month+1)/10)) + day)%7);
 }
+
+function formSubmitted(e){
+  e.preventDefault()
+}

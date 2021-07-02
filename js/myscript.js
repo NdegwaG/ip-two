@@ -17,3 +17,10 @@ function formSubmitted(e){
 
 const gender =document.querySelector('input[name="gender"]:checked').value;
 const dayOfWeek = calculateDayOfWeek(day,month,year)
+
+if (gender === "M"){
+  alert("You were born on a "+weekDay[dayOfWeek]+",and your Akan name is "+maleNames[dayOfWeek]+".")
+}
+  else{
+    alert("You were born on a "+weekDay[dayOfWeek]+",and your Akan name is "+femaleNames[dayOfWeek]+".")
+  }
